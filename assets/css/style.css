@@ -5,7 +5,7 @@
 }
 
 body {
-    font-size: 1.1rem;
+    font-size: 1em;
     font-family:'Montserrat', sans-serif;
     background-color: #ff00002a;
     height: 120vh;
@@ -13,6 +13,8 @@ body {
 
 .section-navbar {
     background-color: #ff0000;
+    position: fixed;
+    width: 100%;
 }
 
 .navigation {
@@ -31,17 +33,19 @@ body {
 
 .navigation .container .logo {
     font-weight: bold;
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
     display: flex;
     margin: 20px 0;
     color: black;
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
 }
 
 .navigation .container ul {
     display: inline-flex;
     margin: 20px;
     gap: 35px;
+    display: none;
 }
 
 .navigation .container ul li {
@@ -56,8 +60,12 @@ body {
     color: black;
 }
 
-.navigation .container .btn-reservation a {
+.btn-reservation-menu {
     display: flex;
+    padding: 5px;
+}
+
+.navigation .container .btn-reservation{
     margin: 10px;
     padding: 10px 17px;
     font-family: 'Montserrat', sans-serif;
@@ -67,39 +75,78 @@ body {
     border: 2px solid #ff0000;
 }
 
+.btn-menu-link {
+    gap: 0px;
+    margin: 10px;
+    padding: 10px 17px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-menu-link i {
+    font-size: 2em;
+    color: #000;
+    line-height: 25px;
+}
+
 /* banner styling */
 
 .banner {
-    height: 55vh;
-    background-image: linear-gradient(0deg, rgba(4, 15, 1, 0.796), rgba(0, 2, 37, 0.911)), url(/assets/img/coffee.jpg);
+    display: flex;
+    height: 60vh;
+    background-image: linear-gradient(0deg, rgba(1, 6, 0, 0.774), rgba(0, 2, 37, 0.911)), url(/assets/img/banner3_1.jpg);
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
-    
+    object-fit: cover;
 }
 
 .banner .container {
-    padding: 55px 0px;
-    color: aliceblue;  
+    padding: 90px 0px;
+    color: aliceblue;
+    text-align: center;
+    align-items: center;
+    justify-content: center;  
 }
 
 .banner .banner-title h1 {
-    font-size: 2.2rem;
-    margin-bottom: 30px;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    animation-duration: 3s;
+    animation-name: slider;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
 }
 
 .banner .banner-content p {
-    margin-bottom: 55px;
+    margin-bottom: 3.5%;
+    text-align: center;
+    font-weight: bold;
 }
 
 .banner .banner-btn a {
-    padding: 10px 17px;
+    padding: 15px 25px;
     font-family: 'Montserrat', sans-serif;
+    font-weight:600;
     text-decoration: none;
-    background-color: black;
-    color: #ffffff;
-    border: 2px solid #ff0000;   
+    color: #fff;
+    background: #ff0000;
+    border: 2px solid #00000027;
+       
 }
 
-img {
-    max-width: 50%;
+
+/* animation banner title */
+@keyframes slider {
+    from {
+        margin-bottom: 100%;
+        width: 800%;
+    }
+
+    to {
+        margin-right: 0%;
+        width: 100%;
+    }
 }
