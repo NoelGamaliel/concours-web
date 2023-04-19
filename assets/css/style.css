@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1.1rem;
+    font-family:'Montserrat', sans-serif;
+    background-color: #ff00002a;
+    height: 120vh;
+}
+
+.section-navbar {
+    background-color: #ff0000;
+}
+
+.navigation {
+    height: 70px;
+}
+
+.navigation .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    width: 1100px;
+    margin: 0px auto;
+}
+
+.navigation .container .logo {
+    font-weight: bold;
+    display: flex;
+    margin: 20px 0;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+.navigation .container ul {
+    display: inline-flex;
+    margin: 20px;
+    gap: 35px;
+}
+
+.navigation .container ul li {
+    list-style-type: none;
+}
+
+.navigation .container ul li a {
+    list-style-type: none;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+.navigation .container .btn-reservation a {
+    display: flex;
+    margin: 10px;
+    padding: 10px 17px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    background-color: black;
+    color: #ffffff;
+    border: 2px solid #ff0000;
+}
+
+/* banner styling */
+
+.banner {
+    height: 55vh;
+    background-image: linear-gradient(0deg, rgba(4, 15, 1, 0.796), rgba(0, 2, 37, 0.911)), url(/assets/img/coffee.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.banner .container {
+    padding: 55px 0px;
+    color: aliceblue;  
+}
+
+.banner .banner-title h1 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+.banner .banner-content p {
+    margin-bottom: 55px;
+}
+
+.banner .banner-btn a {
+    padding: 10px 17px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    background-color: black;
+    color: #ffffff;
+    border: 2px solid #ff0000;   
+}
+
+img {
+    max-width: 50%;
+}
