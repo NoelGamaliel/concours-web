@@ -1,4 +1,68 @@
+/* @media query for all page */
+
+/* all menu */
 @media (min-width: 230px) and (max-width: 480px)  {
+    /* section-navbar  */
+    .section-navbar {
+        background-color: aliceblue;
+        position: fixed;
+        width: 100%;
+    }
+    /* btn-reservation-menu */
+    .btn-reservation {
+        display: none;
+    }
+    .navigation .container .logo {
+        font-weight: bold;
+        font-size: 1em;
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: flex;
+        margin: 20px 0;
+        color: black;
+    }
+    .banner .container {
+        padding: 20px 0px;
+        color: aliceblue;
+        text-align: center;
+        align-items: center;
+        justify-content: center;  
+    }
+
+    /* banner-title */
+    .banner .banner-title h1 {
+        font-size: 2.5rem;
+    }
+
+    .banner .banner-content p {
+        margin-bottom: 35px;
+    }
+
+    /* details all */
+    .details-all {
+        padding: 5px 0;
+        background: #ffffff;
+        height: 55vh;
+    }
+
+    .details-all .wrapper {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 20px;
+    }
+
+    .details-all .wrapper .wrapper-details-items h2 {
+        font-size: 2rem;
+    }
+
+    .details-all .wrapper .wrapper-details-items span {
+        display: inline-block;
+    }
+    .wrapper-details-items-images {
+        display: none;
+    }
+
     .container {
         width: 70%;
         margin: auto;   
@@ -12,6 +76,17 @@
         flex-direction: column;
     }
 
+    .all-footer .footer-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        margin-bottom: 50px;
+    }
+    .all-footer hr {
+        width: auto;
+        border: 0;
+        border-top: 1px solid #f0e6e6;
+    }
 }
 
 @media (min-width: 480px) and (max-width: 680px)  {
