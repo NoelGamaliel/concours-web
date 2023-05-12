@@ -111,7 +111,7 @@ body {
     justify-content: center;  
 }
 
-.banner .banner-title h1 {
+.banner-title h1 {
     font-size: 3.5rem;
     font-weight: bold;
     margin-bottom: 40px;
@@ -141,7 +141,7 @@ body {
        
 }
 
-/* animation banner title */
+/* 
 @keyframes slider {
     from {
         margin-bottom: 100%;
@@ -153,6 +153,7 @@ body {
         width: 100%;
     }
 }
+*/
 
 /* details-all */
 .details-all {
@@ -209,14 +210,40 @@ body {
 
 /* all-specialite */
 
-.all-specialite {
-    background-color: #ff0000;
-    padding: 40px;
+.all-events {
+    padding: 40px 0;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgb(8, 6, 6) 0%, rgb(255, 0, 0) 84%); 
+}
+.container .wrapper-events {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
 }
 
-.all-specialite .all-specialite-items h2 {
+.all-events .all-events-items h2 {
     font-size: 2.5em;
     color: #fff;
+    margin-bottom: 45px;
+}
+
+.all-events .all-events-items span {
+    display: inline-block;
+    margin-bottom: 85px;
+}
+
+.all-events .all-events-items a {
+    border: 1px solid #f1f1f1;
+    padding: 10px 19px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f1f1f1;
+    font-weight: bold;
+}
+
+.all-events-img img {
+    width: 100%;
+    height: auto;
 }
 
 
