@@ -16,7 +16,7 @@ body {
 }
 
 .section-navbar {
-    background-color: #ff0000;
+    background-color: #ffcc00;
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -67,12 +67,27 @@ body {
 
 .navigation .container .btn-reservation{
     margin: 10px;
-    padding: 10px 17px;
+    padding: 12px 25px;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
-    background-color: black;
-    color: #ffffff;
-    border: 2px solid #ff0000;
+    border: 2px solid #000000;
+    border-radius: 50px;
+    color: #000000;
+    font-weight: bold;
+    transition: .1em ease-in-out;
+    transition-duration: 2s;
+}
+
+.navigation .container .btn-reservation:hover {
+    margin: 10px;
+    padding: 12px 25px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    background-color: #000;
+    border: 1.5px solid #ffcc00;
+    border-radius: 50px;
+    color: #ffcc00;
+    font-weight: bold;
 }
 
 .btn-menu-link {
@@ -94,7 +109,7 @@ body {
 
 .banner {
     display: flex;
-    height: 60vh;
+    height: 64vh;
     background-image: linear-gradient(0deg, rgba(1, 6, 0, 0.774), rgba(0, 2, 37, 0.911)), url(/assets/img/banner3_1.jpg);
     background-position: center;
     background-size: cover;
@@ -123,22 +138,35 @@ body {
 }
 
 .banner .banner-content p {
-    margin-bottom: 3.5%;
+    margin-bottom: 4%;
     text-align: center;
     font-weight: bold;
     z-index: 10px;
 }
 
 .banner .banner-btn a {
-    padding: 15px 25px;
+    padding: 15px 45px;
     font-family: 'Montserrat', sans-serif;
     font-weight:600;
     text-decoration: none;
-    color: #fff;
-    background: #ff0000;
-    border: 2px solid #00000027;
-    z-index: 1px;
-       
+    color: #ffcc00;
+    border: 2px solid #ffcc00;
+    border-radius: 50px;
+    z-index: 1px; 
+    transition: .2em ease-in-out;
+    transition-duration: 2s;  
+}
+
+.banner .banner-btn a:hover {
+    padding: 15px 45px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:600;
+    text-decoration: none;
+    color: #000000;
+    border: 2px solid #000000;
+    background-color: #ffcc00;
+    border-radius: 50px;
+    z-index: 1px;    
 }
 
 /* 
@@ -164,7 +192,7 @@ body {
 
 .details-all .wrapper {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
 }
 
@@ -178,12 +206,13 @@ body {
     margin-bottom: 50px;
 }
 .details-all .wrapper-details-items .btn-details a {
-    background-color: #ff0000;
-    color: #fff;
-    border: 1px solid #fff;
-    font-weight: 500;
+    background-color: #ffcc00;
+    border-radius: 50px;
+    color: #000;
+    border: 1px solid #ffcc0e;
+    font-weight: bold;
     text-decoration: none;
-    padding: 12px 15px;
+    padding: 15px 45px;
 }
 
 
@@ -212,8 +241,7 @@ body {
 
 .all-events {
     padding: 40px 0;
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgb(8, 6, 6) 0%, rgb(255, 0, 0) 84%); 
+    background: linear-gradient(125deg, #ffcc00 40%, #ffcc00 185%); 
 }
 .container .wrapper-events {
     display: grid;
@@ -223,7 +251,7 @@ body {
 
 .all-events .all-events-items h2 {
     font-size: 2.5em;
-    color: #fff;
+    color: #000;
     margin-bottom: 45px;
 }
 
@@ -233,11 +261,12 @@ body {
 }
 
 .all-events .all-events-items a {
-    border: 1px solid #f1f1f1;
-    padding: 10px 19px;
+    border: 2px solid #000000;
+    border-radius: 50px;
+    padding: 12px 30px;
     text-decoration: none;
     text-transform: uppercase;
-    color: #f1f1f1;
+    color: #000;
     font-weight: bold;
 }
 
@@ -335,7 +364,7 @@ body {
 
 /* all-footer */
 .all-footer {
-    background: #ff0000;
+    background: #ffcc00;
     color: #000;
     padding: 20px;
     justify-content: center;
@@ -349,8 +378,9 @@ body {
     margin-bottom: 50px;
 }
 
-.all-footer .footer-container .text-para p {
+.all-footer .footer-container .text-para span {
     padding: 20px 0;
+    display: inline-block;
 }
 
 .all-footer .footer-container .link-media h1 {
@@ -380,10 +410,10 @@ body {
 }
 
 .all-footer hr {
-    width: 500px;
+    width: 100%;
     margin: auto;
     border: 0;
-    border-top: 1px solid #f0e6e6;
+    border-bottom: 1px dashed #000000;
 }
 
 .all-footer .copyright {
@@ -444,7 +474,7 @@ body {
 
 .all-menus-items hr {
     width: 20%;
-    margin-bottom: 10px;
+    margin-bottom: 20px
 }
 
 .all-menus-items span {
