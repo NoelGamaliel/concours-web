@@ -4,7 +4,7 @@
 }
 
 /* all menu */
-@media (min-width: 260px) and (max-width: 480px)  {
+@media (min-width: 260px) and (max-width: 500px)  {
     /* section-navbar  */
     * {
         font-family: 'Rubik', sans-serif;
@@ -126,7 +126,7 @@
     }
 }
 
-@media (min-width: 400px) and (max-width: 700px)  {
+@media (min-width: 500px) and (max-width: 700px)  {
     *{
         font-family: 'Rubik', sans-serif;
     }
