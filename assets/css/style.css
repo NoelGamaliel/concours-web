@@ -3,11 +3,12 @@
     margin: 0;
     padding: 0;
     z-index: 0;
+    font-family: 'Rubik', sans-serif;
 }
 
 body {
     font-size: 1em;
-    font-family:'Montserrat', sans-serif;
+    font-family: 'Rubik', sans-serif;
     height: 120vh;
 }
 .container {
@@ -62,7 +63,7 @@ body {
 
 .btn-reservation-menu {
     display: flex;
-    padding: 5px;
+    padding: 0px;
 }
 
 .navigation .container .btn-reservation{
@@ -91,7 +92,6 @@ body {
 }
 
 .btn-menu-link {
-    gap: 0px;
     margin: 10px;
     padding: 10px 17px;
     font-family: 'Montserrat', sans-serif;
@@ -110,7 +110,7 @@ body {
 .banner {
     display: flex;
     height: 64vh;
-    background-image: linear-gradient(0deg, rgba(1, 6, 0, 0.774), rgba(0, 2, 37, 0.911)), url(/assets/img/banner3_1.jpg);
+    background-image: linear-gradient(0deg, rgba(1, 6, 0, 0.881), rgba(0, 2, 37, 0.911)), url(/assets/img/banner-hero.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -121,9 +121,7 @@ body {
 .banner .container {
     padding: 90px 0px;
     color: aliceblue;
-    text-align: center;
-    align-items: center;
-    justify-content: center;  
+    text-align: center;  
 }
 
 .banner-title h1 {
@@ -413,7 +411,7 @@ body {
     width: 100%;
     margin: auto;
     border: 0;
-    border-bottom: 1px dashed #000000;
+    border-bottom: 1px solid #f8e38d;
 }
 
 .all-footer .copyright {
