@@ -9,41 +9,13 @@
 /* all menu */
 @media (min-width: 260px) and (max-width: 500px)  {
     /* section-navbar  */
-    * {
-        font-family: 'Rubik', sans-serif;
+    .container {
+        margin: auto;
+        width: 90%;
     }
-    .section-navbar {
-        background-color: #ffcc00;
-        position: fixed;
-        width: 100%;
-    }
-
+    
     /* navigation_links */
 
-
-
-
-    .btn-menu-link {
-        margin: 10px;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold;
-        text-decoration: none;
-    }
-
-    /* btn-reservation-menu */
-    .btn-reservation {
-        display: none;
-    }
-    .navigation .container .logo {
-        font-weight: bold;
-        font-size: 1em;
-        font-family: 'Montserrat', sans-serif;
-        text-decoration: none;
-        text-transform: uppercase;
-        display: flex;
-        margin: 20px 0;
-        color: black;
-    }
 
     .banner .container {
         padding: 20px 0px;
@@ -107,19 +79,6 @@
         width: 100%;
         height: auto;
         display: none;
-    }
-
-    .container {
-        width: 85%;
-        margin: auto;   
-    }
-    .banner-menu .container h1 {
-        padding: 10px 0;
-        font-size: 2.5em;
-    }
-    .all-menus .container {
-        display: flex;
-        flex-direction: column;
     }
 
     .all-footer .footer-container {
