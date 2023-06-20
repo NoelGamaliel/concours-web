@@ -4,6 +4,7 @@
 
 * {
     font-family: 'Rubik', sans-serif;
+    z-index: 99;
 }
 
 /* all menu */
@@ -13,10 +14,49 @@
         margin: auto;
         width: 90%;
     }
-    
+
     /* navigation_links */
+    .logo a {
+        font-weight: bold;
+        font-size: 1.1em;
+        color: #000;
+        margin-left:40px;
+        text-transform: capitalize;
+        position: absolute;
+    }
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        background-color: #ff0000;
+        position: absolute;
+        height: 35vh;
+        top: 90px;
+        left: 0;
+        width: 100%;
+    }
+    .nav-links ul li {
+        display: flex;
+        justify-content: start;
+        margin-left: 40px;
+    }
 
 
+    /* btn-reservation */
+    .btn-reservation a {
+        color: #000;
+        text-transform: uppercase;
+        font-weight: bold;
+        display: none;
+    }
+    /* btn-menu-toggle */
+    .btn-menu-toggle i {
+        font-size: 2em;
+        color: #000;
+        margin-right: 50px;
+        display: block;
+    }
+
+     /* banner section */
     .banner .container {
         padding: 20px 0px;
         color: aliceblue;
